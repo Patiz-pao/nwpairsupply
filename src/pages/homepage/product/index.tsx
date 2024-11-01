@@ -1,6 +1,6 @@
 import React from "react";
 
-const Product: React.FC = () => {
+const Product = () => {
   return (
     <div>
       <h1 className="mt-10">หน้าสินค้า</h1>

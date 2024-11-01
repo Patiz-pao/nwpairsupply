@@ -1,6 +1,6 @@
 import React from "react";
 
-const Promotion: React.FC = () => {
+const Promotion = () => {
   return (
     <div>
       <h1 className="mt-10">หน้าโปรโมชั่น</h1>
