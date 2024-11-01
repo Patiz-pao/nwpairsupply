@@ -10,3 +10,44 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.link-hover {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-hover::before,
+.link-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: rgb(9, 65, 112);
+    transition: width 0.2s ease-in-out;
+    width: 0;
+}
+
+.link-hover::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link-hover::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.link-hover:hover {
+    color: rgb(9, 65, 112);
+}
+
+.link-hover:hover::before,
+.link-hover:hover::after {
+    width: 100%;
+}
+
+.link-hover.active::before,
+.link-hover.active::after {
+    width: 100%;
+}
