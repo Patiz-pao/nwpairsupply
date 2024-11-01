@@ -87,15 +87,15 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`px-3 py-2 text-lg font-medium text-white relative group ${
+                className={`px-2 py-2 text-lg font-medium text-white relative group ${
                   router.pathname === link.path ? "after:w-full" : "after:w-0"
                 }`}
               >
                 {link.name}
                 <span
-                  className="absolute bottom-0 left-0 h-0.5 bg-white transition-all duration-300 ease-out 
+                  className="absolute bottom-0 left-0 h-0.5 bg-white transition-all duration-500 ease-out 
                   group-hover:w-full after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-white 
-                  after:transition-all after:duration-300 after:ease-out w-0"
+                  after:transition-all after:duration-500 after:ease-out w-0"
                 />
               </Link>
             ))}
@@ -105,7 +105,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden transition-all duration-300 ease-in-out text-center ${
+        className={`lg:hidden transition-all duration-500 ease-in-out text-center ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
@@ -114,7 +114,7 @@ const Navbar = () => {
             <Link
               key={link.path}
               href={link.path}
-              className={`block px-3 py-2 text-base font-medium text-white relative group ${
+              className={`block px-2 py-2 text-base font-medium text-white relative group ${
                 router.pathname === link.path ? "after:w-full" : "after:w-0"
               }`}
             >
