@@ -6,9 +6,13 @@
 
 body {
     font-family: 'IBM Plex Sans Thai', sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTART2n01Ydhw_oluyrrv2lAi3yISfBdYkTox-tus5Mk_W1eDZuakyCkNAVEYzsYTgSuYs&usqp=CAU') !important;
     font-size: 20px;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .link-hover {
