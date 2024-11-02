@@ -63,7 +63,7 @@ const Home = () => {
             <div className="border-t border-black mb-5 mt-3"></div>
             <AboutContent />
           </div>
-          <div className="p-10 bg-white rounded-lg mx-5">
+          <div className="p-10 bg-slate-100 rounded-lg mx-5">
             <Product></Product>
           </div>
         </div>

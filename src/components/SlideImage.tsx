@@ -1,6 +1,5 @@
-// Slideshow.tsx
 import React, { useState, useEffect } from "react";
-import images, { ImageKey } from "../pages/images";
+import { ImageKey, images} from "../pages/images";
 
 import Image from 'next/image';
 
