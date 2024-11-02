@@ -18,10 +18,10 @@ const About = () => {
             <h1 className="text-2xl font-bold">เกี่ยวกับเรา</h1>
           </div>
           <div className="border-t border-black mb-3 mx-5"></div>
-          <div className="mx-5 bg-white p-10 rounded-lg shadow-lg">
+          <div className="mx-5 bg-white p-10 rounded-lg shadow-lg mt-5">
             <AboutContent />
           </div>
-          <span></span>
+          <div className="h-[16px]"></div>
         </div>
       </Layout>
     </div>
