@@ -1,6 +1,6 @@
 import React from "react";
 import { homepage, homesectiondescription } from "../../images";
-import { Layout, AboutContent, Product } from "@/components";
+import { Layout, AboutContent, ProductPage } from "@/components";
 
 const Home = () => {
   return (
@@ -64,7 +64,7 @@ const Home = () => {
             <AboutContent />
           </div>
           <div className="p-10 bg-slate-100 rounded-lg mx-5">
-            <Product></Product>
+            <ProductPage></ProductPage>
           </div>
         </div>
       </Layout>

@@ -19,6 +19,7 @@ const products = {
   Image10: require("./product/product-10.jpg").default,
   Image11: require("./product/product-11.jpg").default,
   Image12: require("./product/product-12.jpg").default,
+  Image13: require("./product/product-13.jpg").default,
 };
 
 export type ImageKey = keyof typeof images;

@@ -11,6 +11,18 @@ const SlideProduct = () => {
     products.Image10,
     products.Image11,
     products.Image12,
+    products.Image13,
+  ];
+
+  const productDescriptions = [
+    "กล้องหัวฉีด",
+    "สายหัวฉีด",
+    "สายก๊าซโอโซน",
+    "ถาดรองในรถ",
+    "ถาดรองใต้รถ",
+    "สายไฟเครื่อง",
+    "ป้ายไวนิล ขนาด 1 x 3 เมตร",
+    "โบรชัวร์ ขนาด A5"
   ];
 
   useEffect(() => {
@@ -39,12 +51,16 @@ const SlideProduct = () => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {productImages.map((product, index) => (
-          <img
-            key={index}
-            src={product.src}
-            alt={`Slide ${index + 1}`}
-            className="block w-full flex-shrink-0"
-          />
+          <div key={index} className="relative flex-shrink-0 w-full">
+            <img
+              src={product.src}
+              alt={`Slide ${index + 1}`}
+              className="block w-full"
+            />
+            <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center text-black bg-black bg-opacity-10 rounded-lg ">
+              <p className="text-lg">{productDescriptions[index]}</p>
+            </div>
+          </div>
         ))}
       </div>
       <button
