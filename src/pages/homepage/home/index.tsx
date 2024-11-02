@@ -1,6 +1,6 @@
 import React from "react";
 import { homepage, homesectiondescription } from "../../images";
-import { Layout, AboutContent } from "@/components";
+import { Layout, AboutContent, Product } from "@/components";
 
 const Home = () => {
   return (
@@ -13,13 +13,13 @@ const Home = () => {
         >
           <div className="p-10 flex flex-col lg:flex-row">
             <div className="flex flex-col">
-              <h1 className="text-3xl font-bold">
+              <h1 className="text-xl sm:text-3xl font-bold">
                 ระบบล้างตู้แอร์รถยนต์ NWP
                 เทคโนโลยีล้างแอร์รถยนต์แบบส่องกล้องที่ทันสมัยและปลอดภัยที่สุด
               </h1>
-              <h1 className="text-2xl mt-3">ทำไมต้องระบบล้างแอร์รถยนต์ NWP</h1>
+              <h1 className="text-[18px] sm:text-2xl mt-3">ทำไมต้องระบบล้างแอร์รถยนต์ NWP</h1>
               <div className="border-t border-black mt-3"></div>
-              <div className="mt-3 space-y-3">
+              <div className="text-[16px] sm:text-lg mt-3 space-y-3">
                 <p>✅ ไม่ต้องป้อนรหัส ไม่บังคับซื้อน้ำยา ไม่ผูกมัดกับบริษัท</p>
                 <p>✅ ไม่ใช่เครื่องจีน ไม่ต้องกลัวปัญหาบริการหลังการขาย</p>
                 <p>✅ รับประกันซ่อมฟรี ! บริการดี ไม่ทิ้งลูกค้า</p>
@@ -59,9 +59,12 @@ const Home = () => {
             </button>
           </div>
           <div className="p-10">
-            <h1 className="text-3xl font-bold">เกี่ยวกับเรา</h1>
+            <h1 className="text-xl sm:text-3xl font-bold">เกี่ยวกับเรา</h1>
             <div className="border-t border-black mb-5 mt-3"></div>
             <AboutContent />
+          </div>
+          <div className="p-10 bg-white rounded-lg mx-5">
+            <Product></Product>
           </div>
         </div>
       </Layout>
