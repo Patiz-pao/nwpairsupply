@@ -1,9 +1,9 @@
+Project NWP Air Supply
+
+How to run it
+
 ```bash
-npm run dev
-# or
+yarn install
+# and
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
