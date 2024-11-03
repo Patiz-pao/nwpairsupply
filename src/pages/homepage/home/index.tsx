@@ -17,7 +17,9 @@ const Home = () => {
                 ระบบล้างตู้แอร์รถยนต์ NWP
                 เทคโนโลยีล้างแอร์รถยนต์แบบส่องกล้องที่ทันสมัยและปลอดภัยที่สุด
               </h1>
-              <h1 className="text-[18px] sm:text-2xl mt-3">ทำไมต้องระบบล้างแอร์รถยนต์ NWP</h1>
+              <h1 className="text-[18px] sm:text-2xl mt-3">
+                ทำไมต้องระบบล้างแอร์รถยนต์ NWP
+              </h1>
               <div className="border-t border-black mt-3"></div>
               <div className="text-[16px] sm:text-lg mt-3 space-y-3">
                 <p>✅ ไม่ต้องป้อนรหัส ไม่บังคับซื้อน้ำยา ไม่ผูกมัดกับบริษัท</p>
@@ -63,8 +65,10 @@ const Home = () => {
             <div className="border-t border-black mb-5 mt-3"></div>
             <AboutContent />
           </div>
-          <div className="p-10 bg-slate-100 rounded-lg mx-5">
+          <div className="p-10">
+            <div className="rounded-lg shadow-lg bg-slate-100">
             <ProductPage></ProductPage>
+            </div>
           </div>
         </div>
       </Layout>
