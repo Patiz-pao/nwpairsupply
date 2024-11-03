@@ -1,5 +1,5 @@
 import React from "react";
-import { homepage, homesectiondescription } from "../../images";
+import { homepage, homesectiondescription } from "../../../../public/images";
 import { Layout, AboutContent, ProductPage } from "@/components";
 
 const Home = () => {
