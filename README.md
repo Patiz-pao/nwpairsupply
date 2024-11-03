@@ -52,8 +52,6 @@ To run this project locally, follow these steps:
 - Tailwind CSS
 - Yarn
 
-## Acknowledgments
-
 Thank you for visiting my work!
 
 ขอขอบคุณที่เยี่ยมชมผลงานของฉัน
