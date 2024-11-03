@@ -4,7 +4,7 @@ import {
   imagesProductDetail_1,
   imagesProductDetail_2,
   imagesProduct_2,
-} from "../pages/images";
+} from "../../public/images";
 
 const Product = () => {
   return (

@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { icon } from "../pages/images";
+import { icon } from "../../public/images";
+import useNavbarToggle from "@/hooks/useNavbarToggle";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, setIsOpen } = useNavbarToggle();
   const router = useRouter();
 
   const navLinks = [
@@ -15,18 +16,6 @@ const Navbar = () => {
     { name: "โปรโมชั่น", path: "/promotion" },
     { name: "ติดต่อเรา", path: "/contact" },
   ];
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const nav = document.getElementById("main-nav");
-      if (nav && !nav.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   useEffect(() => {
     setIsOpen(false);

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { icon } from "../pages/images";
+import { icon } from "../../public/images";
 
 const Footer = () => {
   return (

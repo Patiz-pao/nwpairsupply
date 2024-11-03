@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { products } from "../pages/images";
+import React from "react";
+import { products } from "../../public/images";
+import { useSlideProduct } from "../hooks/useSlideProduct";
 
 const SlideProduct = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const productImages = [
     products.Image6,
     products.Image7,
@@ -22,27 +22,13 @@ const SlideProduct = () => {
     "ถาดรองใต้รถ",
     "สายไฟเครื่อง",
     "ป้ายไวนิล ขนาด 1 x 3 เมตร",
-    "โบรชัวร์ ขนาด A5"
+    "โบรชัวร์ ขนาด A5",
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % productImages.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [productImages.length]);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % productImages.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + productImages.length) % productImages.length
-    );
-  };
+  const { currentIndex, nextSlide, prevSlide } = useSlideProduct({
+    images: productImages,
+    interval: 3000,
+  });
 
   return (
     <div className="relative overflow-hidden">

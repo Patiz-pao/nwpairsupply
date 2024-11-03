@@ -1,19 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { ImageKey, images} from "../pages/images";
+import { ImageKey, images} from "../../public/images";
+import { useSlideImage } from "../hooks/useSlideImage";
 
 import Image from 'next/image';
 
 const Slideshow = () => {
-    const [currentIndex, setCurrentIndex] = useState<number>(0);
-  
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % Object.keys(images).length);
-      }, 1000);
-  
-      return () => clearInterval(intervalId);
-    }, []);
-  
+    const { currentIndex } = useSlideImage({ length: Object.keys(images).length, interval: 1000 });
     const currentImageKey: ImageKey = `Image${currentIndex + 1}` as ImageKey;
 
     return (
