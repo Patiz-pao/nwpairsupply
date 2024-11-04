@@ -8,7 +8,7 @@ const About = () => {
       <Layout>
         <div
           style={{ backgroundColor: "rgba(250, 250, 250, 0.85)" }}
-          className="mt-5 mb-5 rounded-lg shadow-lg h-[750px]"
+          className="mt-5 mb-5 rounded-lg shadow-lg"
         >
           <div className="p-5 flex">
             <Link href="/" className="text-2xl font-bold hover:underline">
@@ -23,6 +23,7 @@ const About = () => {
           </div>
           <div className="h-[16px]"></div>
         </div>
+        <div className="bg-transparent h-[40px]"></div>
       </Layout>
     </div>
   );
