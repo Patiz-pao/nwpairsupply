@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { icon } from "../../public/images";
-import useNavbarToggle from "@/hooks/useNavbarToggle";
+import useNavbarToggle from "@/hooks/useNavbarToggle.hook";
 
 const Navbar = () => {
   const { isOpen, setIsOpen } = useNavbarToggle();
