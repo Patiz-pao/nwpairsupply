@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { homepage, homesectiondescription } from "../../../../public/images";
-import { Layout, AboutContent, ProductPage } from "@/components";
+import {
+  Layout,
+  AboutContent,
+  ProductPage,
+  ImageGallery,
+  PromotionPage,
+  ContactPage,
+} from "@/components";
 
 const Home = () => {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   return (
     <div>
       <img src={homepage.src} className="mb-0" alt="" />
@@ -67,7 +75,35 @@ const Home = () => {
           </div>
           <div className="p-10">
             <div className="rounded-lg shadow-lg bg-slate-100">
-            <ProductPage></ProductPage>
+              <ProductPage />
+            </div>
+          </div>
+
+          <div className="p-10">
+            <div className="rounded-lg shadow-lg bg-slate-100 p-10">
+              <h1 className="text-xl sm:text-3xl font-bold">ผลงานของเรา</h1>
+              <div className="border-t border-black mb-5 mt-3"></div>
+              <ImageGallery
+                showAll={isGalleryOpen}
+                onToggle={setIsGalleryOpen}
+                showButton={true}
+              />
+            </div>
+          </div>
+
+          <div className="p-10">
+            <div className="rounded-lg shadow-lg bg-slate-100 p-10">
+              <h1 className="text-xl sm:text-3xl font-bold">โปรโมชั่น</h1>
+              <div className="border-t border-black mb-5 mt-3"></div>
+              <PromotionPage />
+            </div>
+          </div>
+
+          <div className="p-10">
+            <div className="rounded-lg shadow-lg bg-slate-100 p-10">
+              <h1 className="text-xl sm:text-3xl font-bold">ติดต่อเรา</h1>
+              <div className="border-t border-black mb-5 mt-3"></div>
+              <ContactPage />
             </div>
           </div>
         </div>

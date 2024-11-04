@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "../../public/images";
-import { useSlideProduct } from "../hooks/useSlideProduct";
+import { useSlideProduct } from "../hooks/useSlideProduct.hook";
 
 const SlideProduct = () => {
   const productImages = [

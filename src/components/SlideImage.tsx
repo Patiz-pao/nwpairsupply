@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ImageKey, images} from "../../public/images";
-import { useSlideImage } from "../hooks/useSlideImage";
+import { useSlideImage } from "../hooks/useSlideImage.hook";
 
 import Image from 'next/image';
 

@@ -9,7 +9,7 @@ import {
 const Product = () => {
   return (
     <div>
-      <div className="p-5 sm:p-10 rounded-lg mx-5">
+      <div className="p-0 sm:p-10 rounded-lg mx-5">
         <div className="text-[20px] sm:text-3xl font-bold text-center">
           <h1>เครื่องล้างตู้แอร์รถยนต์ NWP และกล้องหัวฉีดน้ำยา</h1>
           <div className="flex justify-center items-center">

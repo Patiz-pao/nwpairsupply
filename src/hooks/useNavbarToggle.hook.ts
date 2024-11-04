@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useNavbarToggle = () => {
+export const useNavbarToggle = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -17,5 +17,3 @@ const useNavbarToggle = () => {
 
   return { isOpen, setIsOpen };
 };
-
-export default useNavbarToggle;
