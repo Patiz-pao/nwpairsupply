@@ -16,11 +16,11 @@ const Contact = () => {
           <div className="flex justify-center gap-10">
             <div>
               <img src={qrcode.src} alt="qrcode" className="w-40" />
-              <p className="text-[12px] sm:text-[16px]">QR Code ฝ่ายขาย</p>
+              <p className="text-[12px] sm:text-[16px]">QR ฝ่ายขาย</p>
             </div>
             <div>
               <img src={qrcode.src} alt="qrcode" className="w-40" />
-              <p className="text-[12px] sm:text-[16px]">QR Code ฝ่ายบริการ</p>
+              <p className="text-[12px] sm:text-[16px]">QR ฝ่ายบริการ</p>
             </div>
           </div>
         </div>
