@@ -76,7 +76,7 @@ const Home = () => {
             <div className="rounded-lg shadow-lg bg-slate-100 p-10">
               <h1 className="text-xl sm:text-3xl font-bold">ผลงานของเรา</h1>
               <div className="border-t border-black mb-5 mt-3"></div>
-              <ImageGallery showAll={isGalleryOpen} onToggle={setIsGalleryOpen} />
+              <ImageGallery showAll={isGalleryOpen} onToggle={setIsGalleryOpen} showButton={true} />
             </div>
           </div>
         </div>

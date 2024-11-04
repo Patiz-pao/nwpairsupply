@@ -6,9 +6,10 @@ import { useImageGallery } from "@/hooks/useImageGallery";
 interface ImageGalleryProps {
   showAll: boolean;
   onToggle: (value: boolean) => void;
+  showButton?: boolean;
 }
 
-const ImageGallery: React.FC<ImageGalleryProps> = ({ showAll, onToggle }) => {
+const ImageGallery: React.FC<ImageGalleryProps> = ({ showAll, onToggle, showButton = false }) => {
   type ImportedImage = {
     src: string;
   };
@@ -67,7 +68,8 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ showAll, onToggle }) => {
         ))}
       </div>
 
-      <div className="mt-5 text-center">
+      {showButton && (
+        <div className="mt-5 text-center">
         <button
           onClick={handleToggleView}
           disabled={isAnimating}
@@ -80,6 +82,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ showAll, onToggle }) => {
           {showAll ? "Close" : "View All"}
         </button>
       </div>
+      )}
 
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4">

@@ -20,7 +20,7 @@ const Gallery = () => {
           </div>
           <div className="border-t border-black mb-3 mx-5"></div>
           <div className="mx-5 bg-white p-10 rounded-lg shadow-lg mt-5">
-            <ImageGallery showAll={isGalleryOpen} onToggle={setIsGalleryOpen}/>
+            <ImageGallery showAll={isGalleryOpen} onToggle={setIsGalleryOpen} showButton={false}/>
           </div>
           <div className="h-[16px]"></div>
         </div>
