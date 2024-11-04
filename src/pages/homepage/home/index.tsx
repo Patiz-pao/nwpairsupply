@@ -6,6 +6,7 @@ import {
   ProductPage,
   ImageGallery,
   PromotionPage,
+  ContactPage,
 } from "@/components";
 
 const Home = () => {
@@ -74,7 +75,7 @@ const Home = () => {
           </div>
           <div className="p-10">
             <div className="rounded-lg shadow-lg bg-slate-100">
-              <ProductPage></ProductPage>
+              <ProductPage />
             </div>
           </div>
 
@@ -95,6 +96,14 @@ const Home = () => {
               <h1 className="text-xl sm:text-3xl font-bold">โปรโมชั่น</h1>
               <div className="border-t border-black mb-5 mt-3"></div>
               <PromotionPage />
+            </div>
+          </div>
+
+          <div className="p-10">
+            <div className="rounded-lg shadow-lg bg-slate-100 p-10">
+              <h1 className="text-xl sm:text-3xl font-bold">ติดต่อเรา</h1>
+              <div className="border-t border-black mb-5 mt-3"></div>
+              <ContactPage />
             </div>
           </div>
         </div>

@@ -3,11 +3,11 @@ import { promotion } from "../../public/images";
 
 const Promotion = () => {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="gap-10 sm:flex flex-col lg:flex-row">
       <img
         src={promotion.src}
         alt="Promotion"
-        className="w-4/5 mx-10 lg:w-2/5 mt-5 lg:mt-0"
+        className="mx-auto sm:w-3/4 h-3/4 lg:w-3/5 mt-5 lg:mt-0"
       />
       <div className="flex flex-col">
         <h1 className="text-xl sm:text-3xl font-bold">

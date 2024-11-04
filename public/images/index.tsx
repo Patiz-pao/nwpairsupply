@@ -6,6 +6,7 @@ import imagesProductDetail_1 from "./product/product-4.jpg";
 import imagesProductDetail_2 from "./product/product-5.jpg";
 import imagesProduct_2 from "./product/productIndex_2.png";
 import promotion from "./common/promotion.jpg";
+import qrcode from "./common/ExampleQRCode.png";
 
 const images = {
   Image1: require("./slideImage/product-1.png").default,
@@ -33,4 +34,4 @@ for (let i = 1; i <= 68; i++) {
 }
 
 
-export { icon, homepage, homesectiondescription, about, imagesProductDetail_1, imagesProductDetail_2, images, products, imagesProduct_2, gallery, promotion};
+export { icon, homepage, homesectiondescription, about, imagesProductDetail_1, imagesProductDetail_2, images, products, imagesProduct_2, gallery, promotion, qrcode};

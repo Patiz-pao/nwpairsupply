@@ -7,3 +7,4 @@ export { default as ProductPage } from './Product';
 export { default as Slideshow } from './SlideImage';
 export { default as SlideProduct } from './SlideProduct';
 export { default as PromotionPage } from './Promotion';
+export { default as ContactPage } from './Contact';

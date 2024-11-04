@@ -5,10 +5,12 @@ import { Navbar, Footer } from "@/components";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div>
+<div className="flex flex-col min-h-screen">
       <Navbar />
-      <Component {...pageProps} />
-      <Footer></Footer>
+      <main className="flex-1">
+        <Component {...pageProps} />
+      </main>
+      <Footer />
     </div>
   );
 }

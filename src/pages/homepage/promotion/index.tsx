@@ -23,7 +23,6 @@ const Promotion = () => {
           </div>
           <div className="h-[16px]"></div>
         </div>
-        <div className="bg-transparent h-[120px]"></div>
       </Layout>
     </div>
   );
