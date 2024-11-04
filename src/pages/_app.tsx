@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className="flex-1">
         <Component {...pageProps} />
       </main>
+      <div className="h-[10px]"></div>
       <Footer />
     </div>
   );

@@ -15,7 +15,7 @@ const AboutContent = () => {
         SEAL, U.S.EPA, CSPA เพื่อให้ลูกค้าได้มั่นใจว่าผลิตภัณฑ์ของบริษัทฯ
         จะมีคุณภาพสูงและสามารถตอบสนองต่อความต้องการของลูกค้าได้อย่างดีที่สุด
       </p>
-      <img src={aboutImage.src} alt="about" className="p-10 sm:p-5 w-100" />
+      <img src={aboutImage.src} alt="about" className="p-1 sm:p-5 w-100" />
     </div>
   );
 };
