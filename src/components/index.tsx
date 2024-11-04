@@ -5,3 +5,4 @@ export { default as Footer } from './Footer';
 export { default as ProductPage } from './Product';
 export { default as Slideshow } from './SlideImage';
 export { default as SlideProduct } from './SlideProduct';
+export { default as ImageGallery } from './ImageGallery';
