@@ -7,7 +7,8 @@ const Promotion = () => {
       <img
         src={promotion.src}
         alt="Promotion"
-        className="mx-auto sm:w-3/4 h-3/4 lg:w-3/5 mt-5 lg:mt-0"
+        className="mx-auto lg:w-3/5"
+        // className="mx-auto sm:w-3/4 h-3/4 lg:w-3/5 mt-5 lg:mt-0"
       />
       <div className="flex flex-col">
         <h1 className="text-xl sm:text-3xl font-bold">
